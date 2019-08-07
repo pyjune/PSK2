@@ -32,7 +32,7 @@ int main(void)
 	return 0;
 }
 
-void find(int n) // 기본 순회
+void find(int n) // 조상찾기
 {
 	while (par[n] != 0)
 	{
@@ -41,7 +41,7 @@ void find(int n) // 기본 순회
 	}
 }
 
-void f(int n) // 조상찾기
+void f(int n) // 기본 순회
 {
 	if (n > 0)
 	{
