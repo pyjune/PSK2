@@ -17,10 +17,11 @@ int main(void)
 			if (a[j] < a[i]) // j번 원소로 끝나는 증가수열의 뒤에 i번 원소를 놓아볼 수 있음
 			{
 				d[i] = d[j] + 1 > d[i] ? d[j] + 1 : d[i]; // i번 원소를 놓아서 더 길어지면 갱신
-				if (maxV < d[i])
-					maxV = d[i];
+				
 			}
 		}
+		if (maxV < d[i])
+			maxV = d[i];
 	}
 
 	printf("%d\n", maxV);
